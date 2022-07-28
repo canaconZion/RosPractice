@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/dy/Workdir/zion/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dy/Workdir/zion/dev_ws/build/cpp_pubsub -- -j12 -l12
+[0.071s] [35m[1mScanning dependencies of target talker[0m
+[0.085s] [ 50%] Built target listener
+[0.089s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.502s] [100%] [32m[1mLinking CXX executable talker[0m
+[2.633s] [100%] Built target talker
+[2.641s] Invoked command in '/home/dy/Workdir/zion/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dy/Workdir/zion/dev_ws/build/cpp_pubsub -- -j12 -l12
+[2.670s] Invoking command in '/home/dy/Workdir/zion/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dy/Workdir/zion/dev_ws/build/cpp_pubsub
+[2.676s] -- Install configuration: ""
+[2.677s] -- Installing: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[2.678s] -- Set runtime path of "/home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[2.678s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[2.678s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[2.679s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[2.680s] -- Installing: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[2.680s] -- Up-to-date: /home/dy/Workdir/zion/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[2.682s] Invoked command in '/home/dy/Workdir/zion/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dy/Workdir/zion/dev_ws/build/cpp_pubsub
