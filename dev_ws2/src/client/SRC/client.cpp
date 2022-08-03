@@ -27,8 +27,8 @@ bool ClientHandler::sendParams(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
 
-  if (argc != 4) {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "usage: add_three_ints_client X Y Z");      
+  if (argc != 3) {
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "缺少必须参数");      
       return false;
   }
 
@@ -37,9 +37,12 @@ bool ClientHandler::sendParams(int argc, char **argv)
     node->create_client<tutorial_interfaces::srv::AddThreeInts>("add_three_ints");         
 
   auto request = std::make_shared<tutorial_interfaces::srv::AddThreeInts::Request>();      
-  request->a = atoll(argv[1]);
-  request->b = atoll(argv[2]);
-  request->c = atoll(argv[3]);                                                             
+  request->lat = atoll(argv[1]);
+  request->lng = atoll(argv[2]);
+  if (-90 <= request->lat <= 90 || -180 <= request->lat<= 180){
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "输入经纬度有误");      
+      return false;
+  }                                                         
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -54,9 +57,9 @@ bool ClientHandler::sendParams(int argc, char **argv)
   if (rclcpp::spin_until_future_complete(node, result) ==
     rclcpp::FutureReturnCode::SUCCESS)
   {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sum: %ld", result.get()->sum);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "distance: %ld km", result.get()->distance);
   } else {
-    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service add_three_ints");
+    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service distance");
   }
 
   rclcpp::shutdown();
